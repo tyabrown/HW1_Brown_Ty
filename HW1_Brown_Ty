@@ -1,0 +1,38 @@
+#Question 1 - parts a-c
+QOneList = list (range(30,65,5))
+print(QOneList)
+
+QOneList.sort(reverse=1)
+print(QOneList)
+
+QOneList.insert(0,65)
+print(QOneList)
+
+#Question 2 - parts a-d
+QTwoList = []
+for num in range(21):
+    QTwoList.append(num)
+print(QTwoList)
+
+QTwoList.remove(0)
+print(QTwoList)
+
+print(len(QTwoList))
+print(max(QTwoList))
+print(min(QTwoList))
+
+total = 0
+for num in QTwoList: #this manages to complete the question with a for loop
+    total += num
+print(total)
+
+sum(QTwoList) #but this also works, in case we are supposed to use the sum command
+
+#Question 3 - parts a-b
+QThreeDict = {"sunny":"play","rainy":"watch TV","cloudy":"walk"}
+print(QThreeDict)
+for a,b in QThreeDict.items():
+    print("When", a, "let us", b)
+
+QThreeDict.update({ "snowy" : "ski" })
+print(QThreeDict)
